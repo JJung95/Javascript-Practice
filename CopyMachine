@@ -1,0 +1,9 @@
+//It replicates an element by an x number of times. 
+
+function copyMachine(element, num){
+  var arrEle = [];
+  for(var i = 0; i < num; i++){
+    arrEle.push(element);
+  }
+  return arrEle;
+}
