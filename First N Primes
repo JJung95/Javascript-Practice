@@ -1,0 +1,23 @@
+//The code takes a number and sums all the prime numbers that are less than or equal to the input. 
+
+function isPrime(n){
+  if(n < 2){
+    return false;  
+  }
+  for(var i = 2; i < n; i++){
+    if(n%i === 0){
+      return false;
+    }
+  }
+  return true;
+}
+
+function sumNPrimes(n){
+  var sum = 0;
+    for(var i = 2; i <= n; i++){
+        if(isPrime(i)){
+          sum+=i;
+        }
+    }
+    return sum;
+}
